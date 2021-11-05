@@ -1,0 +1,17 @@
+@import "../../App.css";
+.container-shopping {
+  position: relative;
+}
+
+.container-shopping span {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--blueInterface);
+  text-align: center;
+  color: var(--whiteInterface);
+  font-size: 14px;
+  left: 14px;
+  bottom: 22px;
+}
