@@ -1,0 +1,78 @@
+@import "../../App.css";
+
+.header {
+  width: 100%;
+  background-color: var(--whiteInterface);
+  box-shadow: 0px 1px 3px var(--blackInterface);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.navegation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container-mobile {
+    display: block;
+    position: absolute;
+    left: 20px;
+  }
+}
+
+.container-logo {
+  margin: 0 0 0 4rem;
+}
+
+.navegation ul {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .navegation ul {
+    display: none;
+  }
+}
+
+.navegation ul li a {
+  color: var(--colorLinks);
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 0.75rem;
+}
+
+.navegation ul li a:hover,
+.navegation ul li a:active {
+  border-bottom: 1px solid var(--blackInterface);
+}
+
+.navegation ul li {
+  border-right: 2px solid var(--gray2Interface);
+  padding: 0 0.4rem;
+}
+.navegation ul li:last-child {
+  border-right: none;
+}
+
+.container-icons {
+  display: flex;
+  margin: 0 4rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container-icons .icons {
+  display: flex;
+  gap: 1rem;
+}
