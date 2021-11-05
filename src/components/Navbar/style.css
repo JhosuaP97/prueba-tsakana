@@ -1,0 +1,53 @@
+@import "../../App.css";
+.nav {
+  background-color: var(--whiteInterface);
+  box-shadow: 0px 1px 3px var(--black2Interface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.nav ul {
+  display: flex;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+}
+
+.nav ul li {
+  padding: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  font-size: 14px;
+}
+
+.nav ul li:last-child {
+  background-color: var(--pinkInterface);
+}
+
+@media screen and (max-width: 768px) {
+  .nav ul {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    top: 60px;
+    flex-direction: column;
+    transition: left 0.3s ease-in;
+    background-color: var(--grayInterface);
+    z-index: 20;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .nav ul.open {
+    left: 0;
+  }
+
+  .nav ul.close {
+    left: -100%;
+  }
+}
