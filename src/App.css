@@ -17,6 +17,9 @@
   --black2Interface: #00000029;
 
   --blueInterface: #00abea;
+
+  --errorInterface: #ff3434;
+  --successInterface: #26b26c;
 }
 
 html,

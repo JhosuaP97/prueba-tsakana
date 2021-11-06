@@ -2,3 +2,8 @@ export { default as Header } from "./Header/Header";
 export { default as Search } from "./Search/Search";
 export { default as ShoppingBag } from "./ShoppingBag/ShoppingBag";
 export { default as Navbar } from "./Navbar/Navbar";
+export { default as Footer } from "./Footer/Footer";
+export { default as Login } from "./Login/Login";
+export { default as InputField } from "./InputField/InputField";
+export { default as Button } from "./Button/Button";
+export { default as Landing } from "./Landing/Landing";

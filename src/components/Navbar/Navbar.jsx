@@ -1,10 +1,9 @@
 import React, { forwardRef } from "react";
 import { ArrowDown } from "../../assets";
 import { listDropDown } from "../../utils/navbarOptions";
-import "./style.css";
+import "./navbar.css";
 
 const Navbar = ({ open }, ref) => {
-  console.log({ open });
   return (
     <nav className="nav">
       <ul className={`${open ? "open" : "close"}`} ref={ref}>

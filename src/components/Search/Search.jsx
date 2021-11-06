@@ -1,6 +1,6 @@
 import React from "react";
 import { SearchIcon } from "../../assets";
-import "./style.css";
+import "./search.css";
 
 const Search = ({ screenSize }) => {
   return (

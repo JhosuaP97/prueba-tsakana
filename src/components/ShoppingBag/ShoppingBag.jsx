@@ -1,6 +1,6 @@
 import React from "react";
 import { ShoppingBagIcon } from "../../assets";
-import "./style.css";
+import "./shoppingBag.css";
 const ShoppingBag = ({ counter }) => {
   return (
     <div className="container-shopping">

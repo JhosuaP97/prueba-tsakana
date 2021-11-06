@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Logo, UserIcon, HamburgerMenu } from "../../assets/";
 
-import "./style.css";
+import "./header.css";
 import { Navbar, Search, ShoppingBag } from "..";
 const Header = () => {
   const [counterBag, setCounterBag] = useState(0);
