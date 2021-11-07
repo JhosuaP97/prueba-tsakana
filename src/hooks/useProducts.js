@@ -5,9 +5,13 @@ const useProducts = () => {
 
   useEffect(() => {
     async function fetchProducts() {
-      const response = await fetch("https://fakestoreapi.com/products");
-      const JSON = await response.json();
-      setProducts(JSON);
+      try {
+        const response = await fetch("https://fakestoreapi.com/products");
+        const JSON = await response.json();
+        setProducts(JSON);
+      } catch (error) {
+        console.log(error);
+      }
     }
 
     fetchProducts();

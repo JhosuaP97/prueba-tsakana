@@ -8,7 +8,6 @@ import { images } from "../../utils/images";
 import useProducts from "../../hooks/useProducts";
 const Landing = () => {
   const { products } = useProducts();
-  console.log(products);
   return (
     <>
       <main className="container-main">

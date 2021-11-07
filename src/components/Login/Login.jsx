@@ -21,7 +21,6 @@ const Login = () => {
   const isFill = watchEmail !== "" && watchPassword !== "";
 
   const onSubmit = (data) => {
-    console.log(data);
     toast.custom((t) => (
       <div className="alert-container">
         <div className="alert-info">
