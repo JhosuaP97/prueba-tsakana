@@ -104,6 +104,7 @@ footer {
   cursor: pointer;
   color: var(--blueInterface);
   margin: 0 0.2rem;
+  background: none;
 }
 
 .box-footer .container-subscribe .input-subscribe p span:hover {
