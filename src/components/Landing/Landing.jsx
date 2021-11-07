@@ -1,5 +1,5 @@
 import React from "react";
-import { Footer, Header, Login, Title } from "..";
+import { Title } from "..";
 import Carousel from "../Carousel/Carousel";
 import "./landing.css";
 
@@ -11,9 +11,7 @@ const Landing = () => {
   console.log(products);
   return (
     <>
-      <Header />
       <main className="container-main">
-        {/* <Login /> */}
         <div className="section-content">
           <Title title="novedades diarias" />
           <Carousel typeofCard="big" data={images} />
@@ -33,7 +31,6 @@ const Landing = () => {
         <div className="section-content">
           <Carousel typeofCard="small" data={products} />
         </div>
-        <Footer />
       </main>
     </>
   );

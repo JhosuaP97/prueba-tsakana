@@ -1,9 +1,18 @@
 import "./App.css";
-
-import { Landing } from "./components/";
+import { Routes, Route } from "react-router-dom";
+import { Landing, Header, Footer, Login } from "./components/";
 
 function App() {
-  return <Landing />;
+  return (
+    <div className="app">
+      <Header />
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+      <Footer />
+    </div>
+  );
 }
 
 export default App;

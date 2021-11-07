@@ -1,13 +1,32 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Logo, UserIcon, HamburgerMenu } from "../../assets/";
 
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
+
 import "./header.css";
 import { Navbar, Search, ShoppingBag } from "..";
 const Header = () => {
-  const [counterBag, setCounterBag] = useState(0);
+  const [counterBag] = useState(0);
   const [openMenu, setOpenMenu] = useState(false);
 
   const refMenu = useRef(null);
+
+  function CustomLink({ children, to, ...props }) {
+    let resolved = useResolvedPath(to);
+    let match = useMatch({ path: resolved.pathname, end: true });
+
+    return (
+      <>
+        <Link
+          style={{ textDecoration: match ? "underline" : "none" }}
+          to={to}
+          {...props}
+        >
+          {children}
+        </Link>
+      </>
+    );
+  }
 
   function handleClickOutside(e) {
     if (refMenu.current?.contains(e.target)) return;
@@ -34,17 +53,19 @@ const Header = () => {
             <HamburgerMenu />
           </div>
           <div className="container-logo">
-            <Logo />
+            <Link to="/">
+              <Logo />
+            </Link>
           </div>
           <ul>
             <li>
-              <a href="#">Mujer</a>
+              <CustomLink to="/mujer">Mujer</CustomLink>
             </li>
             <li>
-              <a href="#">Hombre</a>
+              <CustomLink to="/hombre">Hombre</CustomLink>
             </li>
             <li>
-              <a href="#">Niñas</a>
+              <CustomLink to="/ninas">Niñas</CustomLink>
             </li>
           </ul>
         </div>
@@ -53,7 +74,9 @@ const Header = () => {
           <Search screenSize="desktop" />
           <div className="icons">
             <ShoppingBag counter={counterBag} />
-            <UserIcon />
+            <Link to="login">
+              <UserIcon />
+            </Link>
           </div>
         </div>
       </header>

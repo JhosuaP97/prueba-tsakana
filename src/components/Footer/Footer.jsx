@@ -1,6 +1,8 @@
 import React from "react";
 import { FacebookICon, InstagramIcon, TwitterIcon } from "../../assets";
 import sponsorsImage from "../../assets/img/sponsors.png";
+import { Link } from "react-router-dom";
+
 import { Button } from "..";
 import "./footer.css";
 const Footer = () => {
@@ -12,18 +14,18 @@ const Footer = () => {
             <div className="info">
               <div className="box-footer">
                 <h2>Empresa</h2>
-                <a href="#">Información legal</a>
-                <a href="#">Politica de privacidad</a>
-                <a href="#">Politica de devoluciones </a>
+                <a href="/">Información legal</a>
+                <a href="/">Politica de privacidad</a>
+                <a href="/">Politica de devoluciones </a>
               </div>
               <div className="box-footer">
                 <h2>Ayuda y apoyo</h2>
-                <a href="#">Correoelectronico@hotmail.com</a>
-                <a href="#">Solicitudes</a>
+                <a href="/">Correoelectronico@hotmail.com</a>
+                <a href="/">Solicitudes</a>
               </div>
               <div className="box-footer">
                 <h2>Soy admin</h2>
-                <a href="#">Iniciar sesíón</a>
+                <Link to="/login">Iniciar sesíón</Link>
               </div>
             </div>
           </div>

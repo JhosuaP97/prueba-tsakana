@@ -89,7 +89,7 @@ const Login = () => {
             </div>
 
             <div className="input-row">
-              <a href="#">He olvidado mi contraseña</a>
+              <a href="/">He olvidado mi contraseña</a>
             </div>
 
             <div className="input-row">
@@ -110,6 +110,53 @@ const Login = () => {
                 disabled={!isFill}
               >
                 Iniciar sesión
+              </Button>
+            </div>
+          </form>
+        )}
+        {selected === "right" && (
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <div className="input-row">
+              <InputField
+                type="text"
+                textLabel="Correo electrónico"
+                name="email"
+                placeholder="Ingrese un correo"
+                error={errors.email}
+                {...register("email", {
+                  required: "Campo obligatorio",
+                  pattern: {
+                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                    message: "Correo inválido",
+                  },
+                })}
+              />
+            </div>
+            <div className="input-row">
+              <InputField
+                type="password"
+                textLabel="Contraseña"
+                name="password"
+                error={errors.password}
+                placeholder="Ingrese una contraseña"
+                {...register("password", {
+                  required: "Campo obligatorio",
+                })}
+              />
+            </div>
+
+            <div className="input-row">
+              <a href="/">He olvidado mi contraseña</a>
+            </div>
+
+            <div className="container-button">
+              <Button
+                type="submit"
+                buttonStyle="btn-primary-solid"
+                buttonSize="btn-large"
+                disabled={!isFill}
+              >
+                Registrarse
               </Button>
             </div>
           </form>
