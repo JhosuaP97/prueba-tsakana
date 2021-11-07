@@ -47,14 +47,17 @@ const Footer = () => {
                     promociones
                   </p>
                   <div className="input-subscribe">
-                    <input type="text" />
-                    <Button
-                      type="button"
-                      buttonStyle="btn-primary-solid"
-                      buttonSize="btn-small"
-                    >
-                      Enviar
-                    </Button>
+                    <div className="subscribe-container">
+                      <input type="text" />
+                      <Button
+                        type="button"
+                        buttonStyle="btn-primary-solid"
+                        buttonSize="btn-small"
+                      >
+                        Enviar
+                      </Button>
+                    </div>
+
                     <p>
                       Al hacer click en ENVIAR, acepta nuestra
                       <span>politica de privacidad y cookies.</span>

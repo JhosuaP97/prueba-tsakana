@@ -90,6 +90,10 @@ footer {
   flex-direction: column;
   justify-content: center;
 }
+.box-footer .container-subscribe .input-subscribe .subscribe-container {
+  display: flex;
+  margin: 1rem 0;
+}
 
 .box-footer .container-subscribe .input-subscribe input {
   width: 100%;
