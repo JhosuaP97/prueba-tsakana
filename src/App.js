@@ -1,16 +1,9 @@
 import "./App.css";
 
-import { Header, Footer, Login, Landing } from "./components/";
+import { Landing } from "./components/";
 
 function App() {
-  return (
-    <>
-      <Header />
-      {/* <Login /> */}
-      <Landing />
-      <Footer />
-    </>
-  );
+  return <Landing />;
 }
 
 export default App;

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,200&display=swap");
 :root {
   --whiteInterface: #ffffff;
 
@@ -11,10 +12,17 @@
   --gray6Interface: #cfcfcf;
   --gray7Interface: #cccccc;
 
+  --oldPriceColor: #9a9696;
+
+  --cardTextColor: #4a4a4a;
+  --cardPrice: #262425;
+
   --pinkInterface: #ffd6d6;
 
   --blackInterface: #000000;
   --black2Interface: #00000029;
+
+  --discountColor: #dc0b13;
 
   --blueInterface: #00abea;
 
@@ -30,6 +38,11 @@ body {
   box-sizing: border-box;
   width: 100%;
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+p {
+  margin: 0;
 }
 
 ul {

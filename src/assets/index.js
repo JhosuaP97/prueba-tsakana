@@ -10,3 +10,5 @@ export { InstagramIcon } from "./InstagramIcon";
 export { AlertIcon } from "./AlertIcon";
 export { CheckIcon } from "./CheckIcon";
 export { CloseIcon } from "./CloseIcon";
+export { ArrowButtonRight } from "./ArrowButtonRight";
+export { ArrowButtonLeft } from "./ArrowButtonLeft";

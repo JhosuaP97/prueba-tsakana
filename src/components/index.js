@@ -7,3 +7,6 @@ export { default as Login } from "./Login/Login";
 export { default as InputField } from "./InputField/InputField";
 export { default as Button } from "./Button/Button";
 export { default as Landing } from "./Landing/Landing";
+export { default as Carousel } from "./Carousel/Carousel";
+export { default as Card } from "./Card/Card";
+export { default as Title } from "./Title/Title";

@@ -1,0 +1,30 @@
+.container-carousel {
+  max-width: 1200px;
+  width: 100%;
+  min-width: 260px;
+  min-height: 300px;
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+.carousel-info {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.prev {
+  left: -8px;
+}
+
+.next {
+  right: -15px;
+}

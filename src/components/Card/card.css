@@ -1,0 +1,91 @@
+@import "../../App.css";
+
+.container-card {
+  min-width: 25%;
+  overflow: hidden;
+  padding: 5px;
+  width: 100%;
+  max-width: 465px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.small {
+  font-family: "Nunito", sans-serif;
+}
+
+.container-card img {
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  height: 343px;
+}
+
+.container-card .old-price {
+  text-decoration: line-through;
+  color: var(--oldPriceColor);
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  font-style: italic;
+}
+
+.container-card .card-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-card .card-info .card-text {
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  color: var(--blackInterface);
+  margin: 0;
+}
+
+.container-card .card-info.small-card {
+  flex-direction: column-reverse;
+}
+
+.card-info .card-price {
+  display: flex;
+  gap: 1rem;
+}
+
+.card-price .big-price {
+  color: var(--blackInterface);
+  font-size: 20px;
+}
+
+.container-card .card-info .card-price .card-discount {
+  color: var(--discountColor);
+}
+
+.container-card h2 {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--cardPrice);
+}
+
+.container-card p {
+  font-weight: bold;
+  letter-spacing: -0.4px;
+  color: var(--cardTextColor);
+}
+
+.container-card .card-send-free {
+  color: var(--discountColor);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 900px) {
+  .container-card {
+    min-width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container-card {
+    min-width: 100%;
+  }
+}
